@@ -1,0 +1,19 @@
+{
+  "name": "viewsnap",
+  "version": "1.0.0",
+  "description": "Chromium/Vivaldi extension that saves the visible viewport as a PNG to a Downloads subfolder with one keyboard shortcut.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --test test/*.test.js",
+    "package": "node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "fflate": "^0.8.2",
+    "globals": "^15.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "viewsnap",
+  "version": "1.0.0",
+  "description": "Save the visible viewport as a PNG to a Downloads subfolder with one keyboard shortcut.",
+  "permissions": ["activeTab", "downloads", "storage"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "options_ui": { "page": "options.html", "open_in_tab": true },
+  "commands": {
+    "capture-viewport": {
+      "suggested_key": { "default": "Alt+Shift+S" },
+      "description": "Save the visible viewport as PNG"
+    }
+  }
+}

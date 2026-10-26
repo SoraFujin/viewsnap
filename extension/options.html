@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>viewsnap options</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; max-width: 36rem; margin: 2rem auto; }
+    label { display: block; margin-top: 1rem; font-weight: 600; }
+    input { width: 100%; box-sizing: border-box; padding: .4rem; }
+    code { background: #8882; padding: 0 .2rem; }
+  </style>
+</head>
+<body>
+  <h1>viewsnap</h1>
+  <form id="form">
+    <label for="subfolder">Subfolder inside Downloads</label>
+    <input id="subfolder" required>
+    <label for="template">Filename template</label>
+    <input id="template" required>
+    <p>Placeholders: <code>%host</code> <code>%title</code> <code>%Y</code> <code>%m</code> <code>%d</code> <code>%H</code> <code>%M</code> <code>%S</code>. The <code>.png</code> extension is added automatically.</p>
+    <p>Preview: <code id="preview"></code></p>
+    <button type="submit">Save</button>
+    <button type="button" id="reset">Reset to defaults</button>
+    <span id="status" role="status"></span>
+  </form>
+  <script type="module" src="options.js"></script>
+</body>
+</html>
