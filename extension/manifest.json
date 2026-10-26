@@ -3,12 +3,39 @@
   "name": "viewsnap",
   "version": "1.0.0",
   "description": "Save the visible viewport as a PNG to a Downloads subfolder with one keyboard shortcut.",
-  "permissions": ["activeTab", "downloads", "storage"],
-  "background": { "service_worker": "background.js", "type": "module" },
-  "options_ui": { "page": "options.html", "open_in_tab": true },
+  "homepage_url": "https://github.com/SoraFujin/viewsnap",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "viewsnap",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
   "commands": {
     "capture-viewport": {
-      "suggested_key": { "default": "Alt+Shift+S" },
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
       "description": "Save the visible viewport as PNG"
     }
   }

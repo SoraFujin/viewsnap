@@ -7,7 +7,7 @@ A Manifest V3 extension for Chromium and Vivaldi. One keyboard shortcut saves th
 2. Click "Load unpacked" and select the `extension/` folder of this repo.
 
 ## Shortcut
-Default: `Alt+Shift+S`. To change it, open `chrome://extensions/shortcuts` (Vivaldi: `vivaldi://extensions` → Keyboard Shortcuts, or Settings → Keyboard) and set the shortcut for "Save the visible viewport as PNG". Browser-reserved keys may not be usable.
+Default: `Ctrl+Shift+S` (`Cmd+Shift+S` on macOS). To change it, open `chrome://extensions/shortcuts` (Vivaldi: `vivaldi://extensions` → Keyboard Shortcuts, or Settings → Keyboard) and set the shortcut for "Save the visible viewport as PNG". Browser-reserved keys may not be usable.
 
 ## Options
 Open the extension's Options page to set:
