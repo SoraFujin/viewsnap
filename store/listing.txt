@@ -18,7 +18,7 @@ FEATURES
   %H %M %S – time
   Default: screenshot - %host - %Y-%m-%d %H_%M_%S
 • Characters that aren't allowed in filenames are removed automatically
-• Works in Chrome, Vivaldi, Brave, Edge and other Chromium browsers
+• Works in Chromium-based browsers (tested in Vivaldi)
 
 CHANGING THE SHORTCUT
 Open chrome://extensions/shortcuts and set a new key for "Save the visible viewport as PNG". If the default shortcut is already used by your browser, your OS or another extension, set a different one there.
